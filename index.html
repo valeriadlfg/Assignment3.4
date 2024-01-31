@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Assigment</title>
+</head>
+<body>
+    <h1>Hello User!</h1>
+    <h3>Welcome to my very basic page full of Javascript!</h3>
+    <p>Guess what? Everything will be in the console, check it out! </p>
+
+    <p id="demo"></p>
+    <script src="app.js"></script>
+
+    
+
+<button onclick="displayDateTime()">Show Date and Time</button>
+
+<p id="dateTimeDisplay"></p>
+
+<script>
+function displayDateTime() {
+    
+    let currentDate = new Date(); 
+    let formattedDateTime = currentDate.toLocaleString();
+    document.getElementById("dateTimeDisplay").innerHTML = "Current Date and Time: " + formattedDateTime;
+}
+
+</script>
+</body>
+</html>
